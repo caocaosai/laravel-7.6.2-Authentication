@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <form action="{{route('admin.manager.update',$user)}}" method="POST">
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">Roles</label>
+                            <label for="username" class="col-md-4 col-form-label text-md-right">Roles</label>
                             <div class="col-md-6">
                                 @csrf
                                 {{method_field('PUT')}}

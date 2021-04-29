@@ -13,7 +13,7 @@
                                 <tr>
                                     <th scope="col text-center">#</th>
                                     <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
+                                    <th scope="col">Username</th>
                                     <th scope="col">Roles</th>
                                     <th scope="col" class="text-center">Actions</th>
                                 </tr>
@@ -23,7 +23,7 @@
                                 <tr>
                                     <th scope="row">{{$loop->iteration}}</th>
                                     <th class="text-nowrap">{{$user->name}}</th>
-                                    <th class="text-nowrap">{{$user->email}}</th>
+                                    <th class="text-nowrap">{{$user->username}}</th>
                                     <th class="text-nowrap">
                                         {{implode(', ',$user->roles()->get()->pluck('name')->toArray())}}
                                     </th>
