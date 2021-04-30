@@ -13,7 +13,7 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        //
+        return view('home');
     }
 
     /**
@@ -43,7 +43,7 @@ class PeopleController extends Controller
     {
         $input_all = $request->all();
         unset($input_all['_token']);
-        \App\Models\person::insert($input_all);
+        \App\Models\Person::insert($input_all);
         return view('home');
     }
 

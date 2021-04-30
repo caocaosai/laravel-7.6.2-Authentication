@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <form action="{{url('/store')}}" method="POST">
+    <form action="{{url('People/store')}}" method="POST">
     @csrf
         <div><center><h1>ข้อมูลทั่วไปของพนักงาน</h1></center>
         <div class="row">
