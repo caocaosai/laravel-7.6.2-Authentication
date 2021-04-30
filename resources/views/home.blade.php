@@ -4,7 +4,7 @@
 <div class="container">
     <form action="{{url('People/store')}}" method="POST">
     @csrf
-        <div><center><h1>ข้อมูลทั่วไปของพนักงาน</h1></center>
+        <div><center><h1>ข้อมูลทั่วไปของพนักงาน</h1></center></div>
         <div class="row">
             <div class="col-md-4">
                 <label for="firstname">ชือ</label>
@@ -48,12 +48,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-success">ส่ง</button>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="d-grid gap-2">
+                    <a href="{{ url('/Employees') }}" class="btn btn-primary">ถัดไป</a>
+                </div>
+            </div>
         </div>  
     </form> 
 </div>

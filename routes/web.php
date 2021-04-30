@@ -27,3 +27,6 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admi
 
 Route::get('/People', [\App\Http\Controllers\PeopleController::class, 'index']);
 Route::post('/People/store', [\App\Http\Controllers\PeopleController::class, 'store']);
+
+Route::get('/Employees', [\App\Http\Controllers\EmployeesController::class, 'index']);
+Route::post('/Employees/store', [\App\Http\Controllers\EmployeesController::class, 'store']);

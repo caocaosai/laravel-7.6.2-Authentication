@@ -21,7 +21,6 @@ class CreatePeopleTable extends Migration
             $table->string('address', 100);
             $table->string('tel', 10)->unique();
             $table->string('flexRadioDefault', 100);
-        
             $table->timestamps();
         });
     }
