@@ -24,3 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admin')->group(function () {
     Route::resource('/manager', 'MenageUsersController', ['except' => ['show', 'create', 'store']]);
 });
+
+
+Route::post('/store', [\App\Http\Controllers\PeopleController::class, 'store']);
