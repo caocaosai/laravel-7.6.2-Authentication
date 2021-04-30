@@ -25,5 +25,5 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admi
     Route::resource('/manager', 'MenageUsersController', ['except' => ['show', 'create', 'store']]);
 });
 
-Route::post('/People', [\App\Http\Controllers\PeopleController::class, 'index']);
+Route::get('/People', [\App\Http\Controllers\PeopleController::class, 'index']);
 Route::post('/People/store', [\App\Http\Controllers\PeopleController::class, 'store']);
