@@ -20,8 +20,8 @@ class CreatePeopleTable extends Migration
             $table->string('email', 200)->unique();
             $table->string('address', 100);
             $table->string('tel', 10)->unique();
-            $table->string('flexRadioDefault', 10);
-            $table->string('position', 10);
+            $table->string('flexRadioDefault', 100);
+        
             $table->timestamps();
         });
     }

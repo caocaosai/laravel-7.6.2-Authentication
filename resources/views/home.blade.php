@@ -31,13 +31,6 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-            <h5>ตำแหน่ง</h5>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option value="1">Director</option>
-                    <option value="2">Manager</option>
-                    <option value="3">Employee</option>
-                </select>
-            </div>
             <div class="col-md-6">
             <h5>สถาณภาพ</h5>
                 <div class="form-check">
